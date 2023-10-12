@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Таблиця з основними правилами німецької мови</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .view {
+            margin: auto;
+            padding: 10px;
+        }
+
+        .wrapper {
+            position: relative;
+            overflow: auto;
+            height: min-content;
+            white-space: nowrap;
+            border: 1px solid #dddddd;
+        }
+
+        .sticky {
+            position: sticky;
+            background-color: white;
+            width: 109px;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        .sticky::after {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border: 1px solid #dddddd;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 800px;
+            margin: -1px;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            vertical-align: top;
+            padding: 8px;
+        }
+
+        tr:first-child th {
+            font-weight: 400;
+        }
+
+        td.border-left,
+        td.border-right,
+        td.border-bottom {
+            position: relative;
+        }
+
+        td.border-left::before,
+        td.border-right::after,
+        td.border-bottom::after {
+            content: '';
+            position: absolute;
+            inset: -1px;
+        }
+
+        td.border-left::before {
+            border-left: 2px solid black;
+        }
+
+        td.border-right::after {
+            border-right: 2px solid black;
+        }
+
+        td.border-bottom::after {
+            border-bottom: 2px solid black;
+        }
+
+        .muted {
+            color: dimgray;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="view">
+    <div class="wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th class="sticky">Відмінки</th>
+                    <th>Frage<br><small>Запитання</small></th>
+                    <th colspan="5">Singular</th>
+                    <th colspan="4">Plural</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="sticky" rowspan="2"><b>Nom.</b><br><small>Називний</small></td>
+                    <td rowspan="2"><b>Wer? Was?</b><br><small>Хто? Що?</small></td>
+                    <td rowspan="2">ich</td>
+                    <td rowspan="2">du</td>
+                    <td class="border-left">er<br><b>der<span class="muted">-e</span></b></td>
+                    <td>es<br><b>das<span class="muted">-e</span></b></td>
+                    <td class="border-right">sie<br><b>die<span class="muted">-e</span></b></td>
+                    <td rowspan="2">wir</td>
+                    <td rowspan="2">ihr</td>
+                    <td class="border-left border-right">sie<br><b>die<span class="muted">-en</span></b></td>
+                    <td rowspan="2">Sie</td>
+                </tr>
+                <tr>
+                    <td class="border-left border-bottom">ein<span class="muted">-er</span></td>
+                    <td class="border-bottom">ein<span class="muted">-es</span></td>
+                    <td class="border-right border-bottom">eine<span class="muted">-e</span></td>
+                    <td class="border-left border-right border-bottom">-&nbsp;<span class="muted">-e</span></td>
+                </tr>
+                <tr>
+                    <td class="sticky" rowspan="2"><b>Gen.</b><br><small>Родовий</small></td>
+                    <td rowspan="2"><b>Wessen?</b><br><small>Чий?</small></td>
+                    <td rowspan="2">mein</td>
+                    <td rowspan="2">dein</td>
+                    <td class="border-left">sein<br><b>des<span class="muted">-en</span></b></td>
+                    <td>sein<br><b>des<span class="muted">-en</span></b></td>
+                    <td class="border-right">ihr<br><b>der<span class="muted">-en</span></b></td>
+                    <td rowspan="2">unser</td>
+                    <td rowspan="2">euer</td>
+                    <td class="border-left border-right">ihr<br><b>der<span class="muted">-en</span></b></td>
+                    <td rowspan="2">Ihr</td>
+                </tr>
+                <tr>
+                    <td class="border-left border-bottom">eines<span class="muted">-en</span></td>
+                    <td class="border-bottom">eines<span class="muted">-en</span></td>
+                    <td class="border-right border-bottom">einer<span class="muted">-en</span></td>
+                    <td class="border-left border-right border-bottom">-&nbsp;<span class="muted">-er</span></td>
+                </tr>
+                <tr>
+                    <td class="sticky" rowspan="2"><b>Dat.</b><br><small>Давальний</small></td>
+                    <td rowspan="2"><b>Wem?</b><br><small>Кому? Чому?</small><br><b style="display:inline-block;margin-top:5px;">Wo? Wann?</b><br><small>Де? Коли?</small></td>
+                    <td rowspan="2">mir</td>
+                    <td rowspan="2">dir</td>
+                    <td class="border-left">ihm<br><b>dem<span class="muted">-en</span></b></td>
+                    <td>ihm<br><b>dem<span class="muted">-en</span></b></td>
+                    <td class="border-right">ihr<br><b>der<span class="muted">-en</span></b></td>
+                    <td rowspan="2">uns</td>
+                    <td rowspan="2">euch</td>
+                    <td class="border-left border-right">ihnen<br><b>der<span class="muted">-en</span></b></td>
+                    <td rowspan="2">Ihnen</td>
+                </tr>
+                <tr>
+                    <td class="border-left border-bottom">einem<span class="muted">-en</span></td>
+                    <td class="border-bottom">einem<span class="muted">-en</span></td>
+                    <td class="border-right border-bottom">einer<span class="muted">-en</span></td>
+                    <td class="border-left border-right border-bottom">-&nbsp;<span class="muted">-en</span></td>
+                </tr>
+                <tr>
+                    <td class="sticky" rowspan="2"><b>Akk.</b><br><small>Знахідний</small></td>
+                    <td rowspan="2"><b>Wen? Was?</b><br><small>Кого? Що?</small><br><b style="display:inline-block;margin-top:5px;">Wohin?</b><br><small>Куди?</small></td>
+                    <td rowspan="2">mich</td>
+                    <td rowspan="2">dich</td>
+                    <td class="border-left">ihn<br><b>den<span class="muted">-en</span></b></td>
+                    <td>es<br><b>das<span class="muted">-e</span></b></td>
+                    <td class="border-right">sie<br><b>die<span class="muted">-e</span></b></td>
+                    <td rowspan="2">uns</td>
+                    <td rowspan="2">euch</td>
+                    <td class="border-left border-right">sie<br><b>die<span class="muted">-en</span></b></td>
+                    <td rowspan="2">Sie</td>
+                </tr>
+                <tr>
+                    <td class="border-left">einen<span class="muted">-en</span></td>
+                    <td>ein<span class="muted">-es</span></td>
+                    <td class="border-right">eine<span class="muted">-e</span></td>
+                    <td class="border-left border-right">-&nbsp;<span class="muted">-e</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
